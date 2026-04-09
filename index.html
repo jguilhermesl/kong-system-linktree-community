@@ -12,6 +12,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '908001375153341');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=908001375153341&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
@@ -148,7 +166,8 @@
             <!-- Link da Comunidade -->
             <div class="space-y-4">
                 <!-- Entrar no Grupo VIP -->
-                <a href="https://chat.whatsapp.com/JUtBzj1TUjI7SS6av89ure?mode=gi_t" target="_blank" rel="noopener noreferrer" 
+                <a href="https://chat.whatsapp.com/JUtBzj1TUjI7SS6av89ure?mode=gi_t" target="_blank" rel="noopener noreferrer"
+                   onclick="fbq('track', 'Lead', {content_name: 'Comunidade VIP - WhatsApp', content_category: 'Community'});" 
                    class="link-button block bg-gradient-to-r from-green-500 to-green-600 text-white rounded-2xl p-5 shadow-lg hover:shadow-2xl transform hover:scale-105">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-4">
